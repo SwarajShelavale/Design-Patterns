@@ -1,17 +1,19 @@
 package com.designpatterns.DesignPatterns.Builder;
 
+import com.designpatterns.DesignPatterns.Builder.Student.Builder;
+
 public class client {
     public static void main(String[] args) {
-        Builder builder = new Builder();
-        builder.setName("Swaraj");
-        builder.setAge(25);
-        builder.setBatch("MFW eve");
-        builder.setPsp(91.9);
-        builder.setGradYear(2022);
-        builder.setPhoneNumber("91929292992");
-
-        Student student = new Student(builder);
-        System.out.println(student);
+        Student student1 = Student.getBuilder()
+                .setName("Swaraj")
+                .setAge(24)
+                .setBatch("MFW eve")
+                .setPsp(91.9)
+                .setGradYear(2022)
+                .setPhoneNumber("91929292992")
+                .setUnivName("DBATU")
+                .build();
+        System.out.println(student1);
         System.out.println("DEBUG");
     }
 }
