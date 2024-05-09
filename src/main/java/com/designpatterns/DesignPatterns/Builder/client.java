@@ -1,7 +1,5 @@
 package com.designpatterns.DesignPatterns.Builder;
 
-import com.designpatterns.DesignPatterns.Builder.Student.Builder;
-
 public class client {
     public static void main(String[] args) {
         Student student1 = Student.getBuilder()
